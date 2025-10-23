@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* BODY */
+
+body {
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: plum;
+}
+
+/* HEADER */
+
+header {
+    padding: 10px;
+    background-color: rgb(75, 0, 150);
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: color 0.25s;
+}
+
+.nav-links a:hover {
+    color: rgb(255, 0, 0);
+    text-decoration: underline;
+}
+
+/* INTRO */
+
+.intro-section {
+    display: flex;
+    padding: 5rem;
+    text-align: center;
+}
+
+.intro-content h1 {
+    font-size: 2.5rem;
+}
+
+.intro-content h2 {
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+.intro-content p {
+    font-size: 1.25rem;
+}
+
+/* CONTACT */
+
+.contact-section {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.contact-section h2 {
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+.contact-content p {
+    font-size: 1.25rem;
+    padding: 1rem;
+}
+
+.contact-links a {
+    color: white;
+    font-size: 1.25rem;
+    text-decoration: none;
+    transition: color 0.25s;
+}
+
+.contact-links a:hover {
+    color: rgb(75, 0, 150);
+    text-decoration: underline;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(75, 0, 150);
+    color: white;
+    text-align: center;
+    padding: 0.5rem 0;
+    position: relative;
+    font-size: 1rem;
+}
