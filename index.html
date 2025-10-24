@@ -1,47 +1,116 @@
 <!DOCTYPE html>
 <html lang="en" class="js-enabled">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Emely Pozo-Lin's Portfolio</title>
-    </head>
-    <body>
-        <header>
-            <nav class="navbar">
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Emely Pozo-Lin's Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="name">
+            <a href="index.html">Emely Pozo-Lin</a>
+        </div>
+
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro-section">
+        <div class="intro-content">
+            <h1>Emely Pozo-Lin's Portfolio</h1>
+            <h2>Welcome!</h2>
+            <p>Scroll down to learn more about me!</p>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>
+                Hi, I'm Emely! I'm a current senior at Colby College, double majoring in Computer Science and Spanish. I'm an aspiring programmer passionate about developing ethically and accessibly. I'm currently enrolled in Software Engineering and Computing Ethics classes.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skills-box">
+                <h3>Programming Languages</h3>
+                <ul>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                    <li>C</li>
                 </ul>
-            </nav>
-        </header>
-
-        <section class="intro-section">
-            <div class="intro-content">
-                <h1>Emely Pozo-Lin's Portfolio</h1>
-                <h2>Hi, I'm Emely!</h2>
-                <p>I'm a current senior at Colby College, double majoring in Computer Science and Spanish.</p>
             </div>
-        </section>
 
-        <section class="contact-section">
-            <h2>Contact Me!</h2>
-            <div class="contact-content">
-                <p>If you'd like to get in contact with me, feel free to reach out through one of the methods below!</p>
-                <div class="contact-links">
-                    <a href="mailto:emelypozolin@gmail.com">Email</a>
-                    <a href="https://www.linkedin.com/in/emely-p-613a2518b/">LinkedIn</a>
-                    <a href="https://github.com/pozolin">Github</a>
-                </div>
+            <div class="skills-box">
+                <h3>Databases</h3>
+                <ul>
+                    <li>MySQL</li>
+                    <li>NoSQL</li>
+                    <li>MongoDB</li>
+                    <li>Neo4j</li>
+                </ul>
             </div>
-        </section>
 
-    <footer> 
+            <div class="skills-box">
+                <h3>Relevant Coursework</h3>
+                <ul>
+                    <li>Data Structures & Algorithms</li>
+                    <li>Data Analysis & Visualization</li>
+                    <li>Computer Organization</li>
+                    <li>Programming Languages</li>
+                    <li>Databases, Advanced Databases</li>
+                    <li>Software Engineering</li>
+                    <li>Computing Ethics</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+        <div class="projects-content">
+            <div class="project">
+                <h3>Sokoban Guide Website</h3>
+                <p>Worked in a team to create a guide website for Sokoban games to learn how to use databases and virtual machines.</p>
+                <a href="https://github.com/GuwnH/Sokoban">View SokoGuides on GitHub</a>
+            </div>
+            <div class="project">
+                <h3>Bookazon Website</h3>
+                <p>Worked in a team to redesign an online bookstore system to learn how to apply SOLID design principles, refactor code smells, and practice Github and Agile Scrum methods.</p>
+                <a href="https://github.com/NotSMX/Group-Sprint-1-Bookazon">View Bookazon on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Me!</h2>
+        <div class="contact-content">
+            <p>If you'd like to get in contact with me, feel free to reach out through one of the methods below!</p>
+            <div class="contact-links">
+                <a href="mailto:emelypozolin@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/emely-p-613a2518b/">LinkedIn</a>
+                <a href="https://github.com/pozolin">Github</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
         <p>Site design &copy; <span id="year"></span> Emely Pozo-Lin. All Rights Reserved.</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
