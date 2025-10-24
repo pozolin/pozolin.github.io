@@ -20,4 +20,4 @@ This is my personal portfolio website, built as a part of Software Engineering, 
 - contact information
 
 ## How To View
-[pozolin.github.io](pozolin.github.io)
+[pozolin.github.io](https://pozolin.github.io/)
