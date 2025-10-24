@@ -15,20 +15,23 @@ body {
     font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
     line-height: 1.6;
-    background-color: plum;
+    background-color: rgb(75, 0, 150);
 }
+
+
 
 /* HEADER */
 
 header {
-    padding: 10px;
-    background-color: rgb(75, 0, 150);
-}
-
-.navbar {
+    padding: .5rem;
+    background-color: rgb(25, 0, 50);
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
 }
 
 .nav-links {
@@ -37,53 +40,209 @@ header {
 }
 
 .nav-links li {
-    margin: 0 10px;
+    margin: 0 1rem;
 }
 
 .nav-links a {
+    display: inline-block;
     color: white;
-    font-size: 1rem;
+    font-size: 1.25rem;
     text-decoration: none;
-    transition: color 0.25s;
+    transition: color 0.25s, transform 0.3s;
 }
 
 .nav-links a:hover {
     color: rgb(255, 0, 0);
     text-decoration: underline;
+    transform: scale(1.1);
+}
+
+.name a {
+    display: inline-block;
+    margin-left: .5rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.75rem;
+    transition: color 0.25s, transform 0.3s;
+}
+
+.name a:hover {
+    color: red;
+    transform: scale(1.1);
 }
 
 /* INTRO */
 
 .intro-section {
     display: flex;
-    padding: 5rem;
+    padding: 6rem;
     text-align: center;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background-image: url('static/images/IMG_2498.PNG');
+    background-size: cover;
+    background-position: center;
+}
+
+.intro-section:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(173, 173, 173, 0.5);
+    z-index: 1;
+}
+
+.intro-content {
+    z-index: 2;
+    position: relative;
 }
 
 .intro-content h1 {
-    font-size: 2.5rem;
+    font-size: 4rem;
 }
 
 .intro-content h2 {
-    margin-top: 1rem;
-    font-size: 2rem;
+    margin-top: 1.5rem;
+    font-size: 2.5rem;
 }
 
 .intro-content p {
+    font-size: 1.5rem;
+}
+
+/* ABOUT */
+
+.about-section {
+    padding: 4rem 2rem;
+    background-color: rgb(65, 0, 130);
+    color: white;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-section p {
+    display: flex;
     font-size: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    max-width: 750px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* SKILLS */
+
+.skills-section {
+    padding: 4rem 2rem;
+    background-color: rgb(55, 0, 110);
+    text-align: center;
+}
+
+.skills-section h2 {
+    font-size: 2.25rem;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.skills-box {
+    background-color: white;
+    padding: 0.75rem;
+    border-radius: 10px;
+    width: 20%;
+    min-width: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-box h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.skills-box ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+/* PROJECTS */
+
+.projects-section {
+    padding: 4rem 2rem;
+    background-color: rgb(45, 0, 90);
+    color: white;
+    text-align: center;
+}
+
+.projects-section h2 {
+    font-size: 2.25rem;
+}
+
+.projects-section h3 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.projects-content p {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.project-item {
+    margin-bottom: 2rem;
+}
+
+.project a {
+    display: inline-block;
+    color: white;
+    font-size: 1.25rem;
+    text-decoration: none;
+    transition: color 0.25s, transform 0.3s;
+    padding: 0.5rem 1rem;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.project a:hover {
+    color: red;
+    border: 2px solid red;
+    text-decoration: underline;
+    transform: scale(1.1);
 }
 
 /* CONTACT */
 
 .contact-section {
-    padding: 4rem 0;
+    color: white;
+    padding: 4rem 2rem;
     text-align: center;
+    background-color: rgb(35, 0, 70);
 }
 
 .contact-section h2 {
     margin-top: 1rem;
-    font-size: 2rem;
+    font-size: 2.25rem;
 }
 
 .contact-content p {
@@ -92,24 +251,32 @@ header {
 }
 
 .contact-links a {
+    display: inline-block;
     color: white;
     font-size: 1.25rem;
     text-decoration: none;
-    transition: color 0.25s;
+    transition: color 0.25s, transform 0.3s;
+    margin: 10px;
+    padding: 0.5rem 1rem;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: transparent;
 }
 
 .contact-links a:hover {
-    color: rgb(75, 0, 150);
+    color: red;
+    border: 2px solid red;
     text-decoration: underline;
+    transform: scale(1.1);
 }
 
 /* FOOTER */
 
 footer {
-    background-color: rgb(75, 0, 150);
+    background-color: rgb(25, 0, 50);
     color: white;
     text-align: center;
-    padding: 0.5rem 0;
+    padding: 1rem 0;
     position: relative;
     font-size: 1rem;
 }
